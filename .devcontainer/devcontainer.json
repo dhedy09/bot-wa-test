@@ -1,0 +1,10 @@
+{
+  "name": "Node.js & Puppeteer",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
+
+  // Perintah ini akan berjalan saat codespace dibuat untuk menginstal semua library yang hilang
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libgtk-3-0 libgbm1 libasound2",
+
+  // Perintah ini akan otomatis menjalankan 'npm install' setelah Anda masuk
+  "postStartCommand": "npm install"
+}
